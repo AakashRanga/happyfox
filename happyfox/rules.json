@@ -1,0 +1,24 @@
+{
+  "rules": [
+    {
+      "predicate": "Any",
+      "conditions": [
+        {
+          "field": "From",
+          "predicate": "Contains",
+          "value": "info@twitter.com"
+        },
+        {
+          "field": "Subject",
+          "predicate": "Contains",
+          "value": "Déborah Tweeted: Friend ?"
+        }
+      ],
+      "actions": [
+        "Mark as read",
+        "Move Message",
+        "print_details"
+      ]
+    }
+  ]
+}

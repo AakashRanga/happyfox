@@ -1,0 +1,69 @@
+#rule1
+{
+  "rules": [
+    {
+      "predicate": "Any",
+      "conditions": [
+        {
+          "field": "From",
+          "predicate": "Contains",
+          "value": "info@naukri.com"
+        },
+        {
+          "field": "Subject",
+          "predicate": "Contains",
+          "value": "important"
+        }
+      ],
+      "actions": [
+        "Mark as read",
+        "Move Message"
+      ]
+    }
+  ]
+}
+#rule2
+{
+  "rules": [
+    {
+      "predicate": "All",
+      "conditions": [
+        {
+          "field": "From",
+          "predicate": "Contains",
+          "value": "akashranga27@gmail.com"
+        },
+        {
+          "field": "Subject",
+          "predicate": "Contains",
+          "value": "important"
+        }
+      ],
+      "actions": [
+        "Mark as read",
+        "Move Message",
+        "print_details"
+      ]
+    },
+    {
+      "predicate": "Any",
+      "conditions": [
+        {
+          "field": "Received Date/Time",
+          "predicate": "Less than",
+          "value": "2023-01-01"
+        },
+        {
+          "field": "Subject",
+          "predicate": "Does not Contain",
+          "value": "important"
+        }
+      ],
+      "actions": [
+        "Mark as unread",
+        "print_details"
+      ]
+    }
+  ]
+}
+
