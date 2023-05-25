@@ -15,6 +15,13 @@ Later on After completing the authentication the Fetch email creates a Table bas
 Then I have set maxResults to 50 to collect the mail from my Inbox.
 And finally Inserting into my Table.
 
+
+
+<img width="960" alt="capture3" src="https://github.com/Aakash287/learning_material/assets/119830681/03203ca7-e909-419d-afa0-ddbbf6b970db">
+
+
+
+
 Next Process,
 
 Process Emails based on requirement rules,
@@ -26,4 +33,9 @@ Based on Any/All the task is set to find different conditions
 If it is All it will check if both email and subject matches the same and gets the actions based on rule (AND).
 If it is Any it will check any of the condition satisfies and gets the action based on rule (OR).
 I have all the conditions rules in JSON file itself to execute the code.
+
+
+
+
+<img width="960" alt="capture4" src="https://github.com/Aakash287/learning_material/assets/119830681/1e83e1a6-b72e-4b81-b208-dacdd3f95839">
 
